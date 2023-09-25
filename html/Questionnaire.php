@@ -1,5 +1,5 @@
 <?php
-    include '../php/CalculImc.php';
+    include ('CalculImc.php');
    
     if(isset($_POST["imc_calculer"])){
         if(isset($_POST["imc_poids_kg"]) && isset($_POST["imc_taille_cm"])){
