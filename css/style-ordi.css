@@ -1,0 +1,328 @@
+@import 'variable.css';
+
+@media only screen and (min-width: 1101px){
+    body {
+        background-color: darkolivegreen;
+        color: violet;
+    }
+
+    main {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: var(--h1-ordi);
+        text-align: center;
+    }
+
+    h2 {
+        font-size: var(--h2-ordi);
+        text-align: center;
+    }
+
+    h3 {
+        font-size: var(--h3-ordi);
+        text-align: center;
+    }
+
+    p {
+        font-size: var(--para-ordi);
+    }
+
+    /* Barre de navigation */
+    #menu {
+        background-color: black;
+        max-width: 1100px;
+        margin: 0 auto;
+        border-radius: 50px;
+        height: 40px;
+    }
+    header {
+        margin: 5% 2% 5%;
+    }
+    
+    .liste {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        line-height: 40px;
+    }
+    
+    .liste li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    .liste li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+    
+    .liste li a:hover {
+        color: #FFD700; /* Change la couleur au survol */
+    }
+
+
+    /* Accueil */
+    .para-present {
+        font-size: var(--para-ordi);
+        text-align: justify;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 2%;
+    }
+    .div-endurance, .div-volume, .div-force  {
+        margin-top: 5%;
+    }
+   
+    .p-img-endu, .p-img-force{
+        display: flex;        
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .img-endurance, .img-volume, .img-force {
+        height: 35%;
+        width: 35%;
+    }
+    .p-endurance, .p-volume, .p-force {
+        height: 50%;
+        width: 50%;
+        text-align: justify;
+    }
+    .p-img-vol {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    /* Pectoraux */
+
+    .titre-pec {
+        font-size: var(--h1-ordi);
+        text-align: center;
+    }
+
+    .illu-pec {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 2% 2%;
+    }
+
+    .p-descr-pec {
+        height: 50%;
+        width: 50%;
+        text-align: justify;
+    }
+    .img-descr-pec {
+        height: 35%;
+        width: 35%;
+        margin: 2%;
+    }
+    .img-dev-couche, .img-dev-incline {
+        height: 25%;
+        width: 25%;
+        margin: 2%;
+    }
+    .p-dev-couche, .p-dev-incline, .p-cable-middle-fly {
+        margin: 2%;
+    }
+    .div-dev-couche, .div-cable-middle-fly {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .li-dev-couche, .li-dev-incline, .li-cable-middle-fly {
+        margin: 0 4% 0;
+        width: 65%;
+        height: auto;
+        text-align: justify;
+    }
+
+    .div-dev-incline {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .img-cable-middle-fly {
+        width: 50%;
+        height: auto;
+        margin: 2%;
+    }
+
+    .div-etirement-pec {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .p-etirement-pec {
+        width: 65%;
+        height: auto;
+        margin: 2%;
+        text-align: justify;
+    }
+
+    .img-etirement-pec {
+        width: 20%;
+        height: auto;
+        margin: 2%;
+    }
+
+    table, th {
+        border-collapse: collapse;
+        border: solid black;
+        padding: 1%;
+        margin: auto;
+    }
+    thead {
+        background-color: black;
+    }
+
+    tbody {
+        background-color: white;
+    }
+
+    .devanture {
+        background-color: red;
+    }
+
+    tfoot{
+        background-color: green;
+    }
+
+
+    /* Dos */
+    .illu-dos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .p-illu-dos{
+        align-items: center;
+        margin-left: 2%;
+        margin-right: 2%;
+        height: 25%;
+        width: 25%;
+        text-align: justify;
+    }
+
+    .img-illu-dos, .img-rowing, .img-tirage-horizontal {
+        height: 35%;
+        width: 35%;
+        margin: 2%;
+    }
+
+    .div-rowing  {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .p-rowing {
+        align-items: center;
+        text-align: justify;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    
+    .div-tirage-horizontal {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .li-tirage-horizontal {
+        margin: 0 4% 0;
+        width: 65%;
+        height: auto;
+        text-align: justify;
+    }
+
+    .div-traction {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 2%;
+    }
+    .img-traction-debout, .img-traction-assis {
+        height: 75%;
+        width: 75%;
+        margin: 5% 2% 5%;
+    }
+    .p-traction {
+        text-align: justify;
+        width: 65%;
+        height: auto;
+    }
+    .div-traction-debout, .div-traction-assis {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div-etirement-dos {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 2%;
+    }
+    .img-etirement-dos {
+        margin-right: 2%;
+        width: 30%;
+        height: 30%;
+    }
+    .p-etirement-dos {
+        text-align: justify;
+        height: 50%;
+        width: 50%;
+
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    input[type="text"], .input-prenom, input[type="number"] {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    input[type="radio"] {
+        margin-right: 10px;
+    }
+    input[type="submit"] {
+        background-color: red;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: orange;
+    }
+
+
+
+
+
+}

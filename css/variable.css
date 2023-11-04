@@ -1,0 +1,39 @@
+:root {
+
+    --turquoise: #101010;
+
+    /* ordi */
+    --h1-ordi: 40px;
+    --h2-ordi: 30px;
+    --h3-ordi : 25px;
+    --para-ordi: 20px;
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+}
+
+footer {
+    margin: 5% 1% 2%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #2a92ac;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+    border: solid 0 transparent;
+    background-color: #24d1fd;
+    border-radius: 50px;
+}
