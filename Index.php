@@ -20,13 +20,15 @@
 </head>
 
 <body>
+    
     <header>
+        <a href="#menu"><img class="haut-de-page" src="./image/retour_haut.jpg" alt="retour de haut de page" /></a>
         <nav id="menu">
             <ul class="liste">
-                <li class="li-accueil"><a href="Index.php">Muscu-pro</a></li>
-                <li class="li-pectoraux"><a href="Index.php?p=Pectoraux.html">Pectoraux</a></li>
-                <li class="li-dos"><a href="Index.php?p=Dos.html">Dos</a></li>
-                <li class="li-questionnaire"><a href="Index.php?p=questionnaire.php">Questionnaire</a></li>
+                <li><a class="a-accueil" href="Index.php">Muscu-pro</a></li>
+                <li><a class="a-pectoraux" href="Index.php?p=Pectoraux.html">Pectoraux</a></li>
+                <li><a class="a-dos" href="Index.php?p=Dos.html">Dos</a></li>
+                <li><a class="a-questionnaire" href="Index.php?p=questionnaire.php">Questionnaire</a></li>
             </ul>
         </nav>
     </header>

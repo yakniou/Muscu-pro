@@ -1,16 +1,27 @@
 :root {
-
-    --turquoise: #101010;
-
-    /* ordi */
+    
+    /* Ordi */
     --h1-ordi: 40px;
     --h2-ordi: 30px;
     --h3-ordi : 25px;
     --para-ordi: 20px;
+
+
+    /* Tablette */
+    --h1-tablette: 30px;
+    --h2-tablette: 25px;
+    --h3-tablette: 20px;
+    --para-tablette: 15px;
+
+    
+    /* Mobile */
+    --h1-mobile: 25px;
+    --h2-mobile: 20px;
+    --h3-mobile: 15px;
+    --para-mobile: 11px;
+
+    --footer: 18px;
 }
-
-
-
 
 * {
     margin: 0;
@@ -20,20 +31,36 @@
 
 body {
     font-family: 'Poppins';
+    background-color: #FFF0EE;
+    color: red;
 }
 
 footer {
+    font-size: var(--footer);
     margin: 5% 1% 2%;
 }
 
+
 ::-webkit-scrollbar {
     width: 10px;
-    background: #2a92ac;
-    border-radius: 50px;
+    background: green;
 }
 
 ::-webkit-scrollbar-thumb {
     border: solid 0 transparent;
-    background-color: #24d1fd;
+    background-color: lightgreen;
     border-radius: 50px;
+}
+.haut-de-page { 
+    z-index: 50;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: green;
 }
