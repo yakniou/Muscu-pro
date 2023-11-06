@@ -43,7 +43,7 @@ if (isset($_POST["imc_calculer"])) {
             <input type="text" name="nom" id="nom" placeholder="Akniou" required>
 
             <label for="prenom">Pr&eacute;nom :</label>
-            <input type="text" name="prenom" placeholder="Yanis" required>
+            <input type="text" name="prenom" id="prenom" placeholder="Yanis" required>
 
             <a href="image/formulaire.png" target="_blank">
                 <img class="img-form" src="image/formulaire.png" alt="Dame qui montre le formulaire">
@@ -51,14 +51,15 @@ if (isset($_POST["imc_calculer"])) {
 
 
             <label for="email">Email :</label>
-            <input type="text" name="email" placeholder="azerty@gmail.com" required>
+            <input type="text" name="email" id="email" placeholder="azerty@gmail.com" required>
 
 
             <label for="age">&Acirc;ge :</label>
-            <input type="number" name="age" placeholder="0" min="0">
+            <input type="number" name="age" id="age" placeholder="0" min="0">
 
-            <legend>Sexe :</legend>
+            <p class="p-quest">Sexe :</p>
             <div class="genre">
+                
                 <input type="radio" name="genre" id="homme" value="homme" required>
                 <label for="homme">Homme</label>
 
@@ -70,14 +71,14 @@ if (isset($_POST["imc_calculer"])) {
         <div class="div-form">
             <h2>Questionnaire sur la musculation</h2>
             <label for="niveau">Niveau d'experience en musculation :</label>
-            <select name="niveau" id size="1">
+            <select name="niveau" id="niveau" size="1">
                 <option value="1" selected="selected">D&eacute;butant</option>
                 <option value="2">Interm&eacute;diaire</option>
                 <option value="3">Avanc&eacute;</option>
                 <option value="4">Coach</option>
             </select>
 
-            <label for="objectif">Questions sur l'Objectif de l'Entra&icirc;nement :</label>
+            <p class="p-quest">Questions sur l'Objectif de l'Entra&icirc;nement :</p>
             <div>
                 <div class="div-checkbox">
                     <input type="checkbox" name="objectif1" id="objectif1" value="1">
@@ -101,10 +102,10 @@ if (isset($_POST["imc_calculer"])) {
             </div>
 
             <label for="pret">Combien d'entrainement par semaine &ecirc;tes vous pr&ecirc;t &agrave; faire ?</label>
-            <input type="number" name="pret" placeholder="4" min="0" max="7">
+            <input type="number" id="pret" name="pret" placeholder="4" min="0" max="7">
 
             <label for="fin">Jusqu'&agrave; quand aimeriez-vous faire votre entrainement ?</label>
-            <input type="date" name="fin" required min="<?php echo date('Y-m-d'); ?>">
+            <input type="date" id="fin" name="fin" required min="<?php echo date('Y-m-d'); ?>">
 
         </div>
         <div class="div-sub-res">
@@ -116,11 +117,17 @@ if (isset($_POST["imc_calculer"])) {
     <form method="post">
         <div class="div-form">
             <h2>Calcul pour l'IMC</h2>
-            <label for="imc">Calcul d'IMC</label>
-            <input type="text" name="imc" placeholder="Poids en kg" />
-            <input type="text" name="imc" placeholder="Taille en cm" />
-            <input type="submit" name="imc" value="Calculer l'IMC" />
-            <input type="text" name="imc" value="<?= isset($imc) ? $imc : "R&eacute;sulat de l'IMC" ?>" disabled />
+            <input type="text" name="imc-poids" id="imc-poids" placeholder="Poids en kg">
+            <label for="imc-poids"></label>
+
+            <input type="text" name="imc-taille" id="imc-taille" placeholder="Taille en cm">
+            <label for="imc-taille"></label>
+
+            <input type="submit" name="imc-calcul" id="imc-submit" value="Calculer l'IMC">
+            <label for="imc-submit"></label>
+
+            <input type="text" name="imc-res" id="imc-res" value="<?= isset($imc) ? $imc : "R&eacute;sulat de l'IMC" ?>" disabled>
+            <label for="imc-res"></label>
         </div>
     </form>
 </main>

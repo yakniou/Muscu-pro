@@ -281,7 +281,9 @@
     select,
     input[name="pret"],
     input[name="fin"],
-    input[name="imc"] {
+    input[name="imc-poids"],
+    input[name="imc-taille"],
+    input[name="imc-res"] {
         width: 70%;
         padding: 1%;
         margin-bottom: 2%;
@@ -346,6 +348,7 @@
         border: none;
         border-radius: 4px;
         cursor: pointer;
+        margin-bottom: 2%;
     }
 
     input[type="reset"] {
@@ -355,6 +358,8 @@
         border: none;
         border-radius: 4px;
         cursor: pointer;
+        margin-bottom: 2%;
+        margin-right: 2%;
     }
 
     input[type="submit"]:hover {

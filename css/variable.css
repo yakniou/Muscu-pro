@@ -64,3 +64,7 @@ h1, h2, h3 {
     text-align: center;
     color: green;
 }
+
+.p-quest {
+    font-size: 16px
+}
