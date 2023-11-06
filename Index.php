@@ -1,3 +1,4 @@
+<!-- Akniou Yanis Groupe 1 MuscuPro (checker html dernière page valide si on enlève le php !!) -->
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -8,9 +9,9 @@
     
     <!-- importation du css -->
     
-    <link rel="stylesheet" type="text/css" href="/muscu_pro/css/style-mobile.css">
-    <link rel="stylesheet" type="text/css" href="/muscu_pro/css/style-tablette.css">
-    <link rel="stylesheet" type="text/css" href="/muscu_pro/css/style-ordi.css">
+    <link rel="stylesheet" type="text/css" href="/AkniouYanis_MuscuPro/css/style-mobile.css">
+    <link rel="stylesheet" type="text/css" href="/AkniouYanis_MuscuPro/css/style-tablette.css">
+    <link rel="stylesheet" type="text/css" href="/AkniouYanis_MuscuPro/css/style-ordi.css">
     
 
     <!-- impotation des fonts -->
