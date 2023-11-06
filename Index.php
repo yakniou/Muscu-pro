@@ -22,7 +22,7 @@
 <body>
     
     <header>
-        <a href="#menu"><img class="haut-de-page" src="./image/retour_haut.jpg" alt="retour de haut de page" /></a>
+        <a href="#menu"><img class="haut-de-page" src="./image/retour_haut.jpg" alt="retour de haut de page"></a>
         <nav id="menu">
             <ul class="liste">
                 <li><a class="a-accueil" href="Index.php">Muscu-pro</a></li>

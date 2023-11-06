@@ -277,6 +277,27 @@
         margin-bottom: 0.5%;
     }
 
+    .div-checkbox {
+        display: flex;
+        justify-content: row;
+        padding: 0.1%;
+
+    }
+
+    label[for="objectif1"],
+    label[for="objectif2"],
+    label[for="objectif3"],
+    label[for="objectif4"],
+    label[for="homme"],
+    label[for="femme"] {
+        cursor: pointer;
+        margin-left: 0.5%;
+    }
+
+    .genre {
+        display: flex;
+    }
+
     input[name="nom"],
     input[name="prenom"],
     input[name="age"],
@@ -300,11 +321,13 @@
     }
 
 
-    input[name="objectif"] {
-        margin-left: 2%;
-        margin-right: 1%;
-        margin-bottom: 2%;
+    input[name="objectif1"],
+    input[name="objectif2"],
+    input[name="objectif3"],
+    input[name="objectif4"],
+    input[name=genre] {
         background-color: #ccc;
+        cursor: pointer;
     }
 
     input[value="femme"] {
@@ -333,6 +356,10 @@
         cursor: pointer;
     }
 
+    .div-sub-res {
+        display: flex;
+        justify-content: center;
+    }
 
     input[type="submit"]:hover {
         background-color: orange;
@@ -346,5 +373,10 @@
         width: 50%;
         height: 50%;
         float: right;
+    }
+
+    .p-message {
+        display: flex;
+        justify-content: center;
     }
 }
